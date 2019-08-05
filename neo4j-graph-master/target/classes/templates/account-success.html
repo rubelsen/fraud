@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Fraud Detector</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load MUI -->
+    <link th:href="@{/css/bootstrap/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" th:href="@{/img/favicon.ico}">
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg" th:replace="navbar::navbarfragment"></nav>
+
+<div class="container page-container">
+    <div class="alert alert-success" role="alert">
+        Congratulations !!! Account Saved Successfully.
+    </div>
+    <div>
+        <a href="/account" class="btn btn-primary">Add Account</a>
+        <a href="/account-list" class="btn btn-primary">Account List</a>
+    </div>
+</div>
+</body>
+
+</html>
